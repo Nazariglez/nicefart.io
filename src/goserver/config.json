@@ -1,0 +1,883 @@
+{
+  "config": {
+    "version": "1.0.5",
+    "coreIpProd": "beanwar.io",
+    "coreIpDev": "192.168.1.104:8000"
+  },
+
+  "prod": [
+
+    {
+      "id": "EU",
+      "name": "Europe",
+      "hosts": [
+        {"url":"46.101.98.241:6070", "max":100, "split":40}
+      ]
+    },
+
+    {
+      "id": "NA",
+      "name": "North America",
+      "default": true,
+      "hosts": [
+
+      ]
+    }
+
+  ],
+
+  "dev": [
+
+    {
+      "id": "LO",
+      "name": "Local",
+      "default": true,
+      "hosts": [
+        {"url":"192.168.1.104:5050", "max":100, "split":40}
+      ]
+    },
+
+    {
+      "id": "TS",
+      "name": "Empty Test",
+      "hosts": [
+      ]
+    }
+
+  ],
+
+  "skins": {
+
+    "textures": {
+      "base0":          ["Qlo_base_BN.png", "none"],
+      "nakedFemale":    ["Qlo_base_Tanga_BN.png", "none"],
+      "nakedMale":      ["Qlo_base_Calzoncillo_BN.png", "none"],
+      "glasses":        ["Culos_SUN_light_BN.png", "none"],
+      "hair1":          ["Pelo_TINT.png", "color"],
+      "hat1":           ["Bombin_DER.png", "none"],
+      "aristo":         ["Lord.png", "none"],
+      "clown":          ["Makeup.png", "none"],
+      "clownHair":      ["Clown_TINT.png", "color"],
+      "wizard":         ["Fartty.png", "none"],
+      "partyHat":       ["Fiesta.png", "none"],
+      "partySound":     ["Pito.png", "none"],
+      "gold":           ["Qlo_Dorado.png", "none"],
+      "diamond":        ["DassIAMOND_color_2.png", "none"],
+      "nurseMask":      ["Mascarilla.png", "color"],
+      "rustAss":        ["Qlo_Oxido.png", "none"],
+      "bronzeRust":     ["Qlo_BronceOxido.png", "none"],
+      "silver":         ["Qlo_Plata.png", "none"],
+      "bronze":         ["Qlo_Bronze.png", "none"],
+      "tattoo1":        ["Tatoo_Fart.png", "none"],
+      "tattoo2":        ["Tatoo_Kanji.png", "none"],
+      "ninja1":         ["Culos_Ninja_2.png", "none"],
+      "robot1":         ["Qlo_Robot.png", "none"],
+      "robot2":         ["Qlo_Robot.png", "color"],
+
+      "tattoo3":        ["Culos_Tatoo_lateral.png", "none"],
+      "tattoo4":        ["Tatoo_Integral_BLACK.png", "none"],
+      "tattoo5":        ["Tatoo_Sup_1.png", "none"],
+      "tattoo6":        ["Tatoo_Integral_color.png", "none"],
+      "tattoo7":        ["Tatoo_Sup_2.png", "none"],
+      "viking":         ["Viking.png", "none"],
+      "vaquero":        ["Vaquero.png", "none"],
+      "bandolero":      ["Bandolero.png", "none"],
+      "pirata":         ["Pirata.png", "none"],
+      "spartan":        ["Spartan.png", "none"],
+      "rapero":         ["Rapero.png", "none"],
+      "kingBlue":       ["Culos_King.png", "none"],
+      "kingRed":        ["Culos_King_2.png", "none"],
+      "ninjaScorpion":  ["Culos_Ninja_Scorpion.png", "none"],
+      "ninjaSubZero":   ["Culos_Ninja_SubZero.png", "none"],
+      "ninjaRain":      ["Culos_Ninja_Rain.png", "none"],
+      "ninjaPink":      ["Culos_Ninja_Pink.png", "none"],
+      "ninjaErmac":     ["Culos_Ninja_Ermac.png", "none"],
+      "ninjaReptil":    ["Culos_Ninja_Reptil.png", "none"],
+      "ninjaRojo":      ["SPC_rojo.png", "none"],
+      "ninjaAzul":      ["SPC_azul.png", "none"],
+      "ninjaDorado":    ["SPC_dorado.png", "none"],
+      "ninjaPlata":     ["SPC_plata.png", "none"],
+      "ninjaVerde":     ["SPC_verde.png", "none"],
+
+      "reddit":         ["REDDIT.png", "none"],
+      "godenot":        ["GODENOT.png", "none"],
+      "dalas":          ["PAMBISITO_560x560.png", "none"]
+    },
+
+    "textureOrder": [
+      "base0",
+      "nakedFemale",
+      "nakedMale",
+      "glasses",
+      "hair1",
+      "hat1",
+      "aristo",
+      "clown",
+      "clownHair",
+      "wizard",
+      "partyHat",
+      "partySound",
+      "gold",
+      "diamond",
+      "nurseMask",
+      "rustAss",
+      "bronzeRust",
+      "silver",
+      "bronze",
+      "tattoo1",
+      "tattoo2",
+      "ninja1",
+      "robot1",
+      "robot2",
+
+      "tattoo3",
+      "tattoo4",
+      "tattoo5",
+      "tattoo6",
+      "tattoo7",
+      "viking",
+      "vaquero",
+      "bandolero",
+      "pirata",
+      "spartan",
+      "rapero",
+      "kingBlue",
+      "kingRed",
+      "ninjaScorpion",
+      "ninjaSubZero",
+      "ninjaRain",
+      "ninjaPink",
+      "ninjaErmac",
+      "ninjaReptil",
+      "ninjaRojo",
+      "ninjaAzul",
+      "ninjaDorado",
+      "ninjaPlata",
+      "ninjaVerde",
+
+      "reddit",
+      "godenot",
+      "dalas"
+    ],
+
+    "colors": {
+      "skinColors": {
+        "none":       "0xFFFFFF",
+
+        "white":      "0xE3CEAE",
+        "chinese":    "0xf7e6c8",
+        "black":      "0x43310b",
+        "black2":     "0x7f5e1b",
+
+        "et":         "0x22b573",
+        "blue":       "0x3399ff",
+        "pink":       "0xff99cc",
+        "violet":     "0xcc66ff",
+        "orange":     "0xff9966",
+        "yellow":     "0xffff99",
+        "green":      "0x999966",
+        "cyan":       "0xccffff",
+
+        "pink2": "0xe95fb4",
+        "pink3": "0xe85fe9",
+        "violet2": "0x7f5fe9",
+        "blue2": "0x5560ef",
+        "cyan2": "0x55efc2",
+        "green2": "0x55ef55",
+        "green3": "0xbeef55",
+        "yellow2": "0xf3f456",
+        "red": "0xff4949",
+
+        "wine": "0x430b0b",
+        "green4": "0x43400b",
+        "green5": "0x0b4328",
+        "blue3": "0x0b3843",
+        "blue4": "0x120b43",
+        "violet3": "0x430b42",
+        "red2": "0xff0000",
+        "orange2": "0xff8a00",
+        "yellow3": "0xf0ff00"
+      },
+
+      "secondaries": [
+        "0xffffff",
+        "0xffce3d", "0x6c7476", "0x856dde", "0xf53e05", "0x4774d9",
+        "0xcbbeb5", "0xdddddd", "0x003b6f", "0xb6fcd5", "0xf3ffce",
+        "0x3bb9ff", "0x502c5f", "0xfa8072", "0xee82ee", "0xe52b50",
+        "0xd11141", "0x00b159", "0x00aedb", "0xf37735", "0xffc425",
+        "0xadff00", "0x74d600", "0x028900", "0x00d27f", "0x00ff83",
+        "0xfe0000", "0xfdfe02", "0x0bff01", "0x011efe", "0xfe00fa",
+        "0xe5d0ff", "0xdabcff", "0xcca3ff", "0xbf8bff", "0x2175d9",
+        "0x00308f", "0xe30074", "0xb8d000", "0xff9900", "0xff0000",
+        "0xccff00", "0x00ff66", "0x0066ff", "0xcc00ff", "0x00ff00"
+      ]
+    },
+
+    "configs":{
+      "skins":[
+        {
+          "value":0,
+          "color":"white",
+          "texture":"base0",
+          "id":"s0"
+        },
+        {
+          "value":0,
+          "color":"chinese",
+          "texture":"base0",
+          "id":"s1"
+        },
+        {
+          "value":0,
+          "color":"black",
+          "texture":"base0",
+          "id":"s2"
+        },
+        {
+          "value":0,
+          "color":"black2",
+          "texture":"base0",
+          "id":"s3"
+        },
+        {
+          "value":0,
+          "color":"et",
+          "texture":"base0",
+          "id":"s4"
+        },
+        {
+          "value":0,
+          "color":"blue",
+          "texture":"base0",
+          "id":"s5"
+        },
+        {
+          "value":0,
+          "color":"pink",
+          "texture":"base0",
+          "id":"s6"
+        },
+        {
+          "value":0,
+          "color":"violet",
+          "texture":"base0",
+          "id":"s7"
+        },
+        {
+          "value":0,
+          "color":"orange",
+          "texture":"base0",
+          "id":"s8"
+        },
+        {
+          "value":0,
+          "color":"yellow",
+          "texture":"base0",
+          "id":"s9"
+        },
+        {
+          "value":0,
+          "color":"green",
+          "texture":"base0",
+          "id":"s10"
+        },
+        {
+          "value":0,
+          "color":"cyan",
+          "texture":"base0",
+          "id":"s11"
+        },
+        {
+          "value":0,
+          "color":"wine",
+          "texture":"base0",
+          "id":"s12"
+        },
+        {
+          "value":0,
+          "color":"green4",
+          "texture":"base0",
+          "id":"s13"
+        },
+        {
+          "value":0,
+          "color":"green5",
+          "texture":"base0",
+          "id":"s14"
+        },
+        {
+          "value":0,
+          "color":"blue3",
+          "texture":"base0",
+          "id":"s15"
+        },
+        {
+          "value":0,
+          "color":"blue4",
+          "texture":"base0",
+          "id":"s16"
+        },
+        {
+          "value":0,
+          "color":"violet3",
+          "texture":"base0",
+          "id":"s17"
+        },
+        {
+          "value":0,
+          "color":"red2",
+          "texture":"base0",
+          "id":"s18"
+        },
+        {
+          "value":0,
+          "color":"orange2",
+          "texture":"base0",
+          "id":"s19"
+        },
+        {
+          "value":0,
+          "color":"yellow3",
+          "texture":"base0",
+          "id":"s20"
+        },
+        {
+          "value":0,
+          "color":"pink2",
+          "texture":"base0",
+          "id":"s21"
+        },
+        {
+          "value":0,
+          "color":"pink3",
+          "texture":"base0",
+          "id":"s22"
+        },
+        {
+          "value":0,
+          "color":"violet2",
+          "texture":"base0",
+          "id":"s23"
+        },
+        {
+          "value":0,
+          "color":"blue2",
+          "texture":"base0",
+          "id":"s24"
+        },
+        {
+          "value":0,
+          "color":"cyan2",
+          "texture":"base0",
+          "id":"s25"
+        },
+        {
+          "value":0,
+          "color":"green2",
+          "texture":"base0",
+          "id":"s26"
+        },
+        {
+          "value":0,
+          "color":"green3",
+          "texture":"base0",
+          "id":"s27"
+        },
+        {
+          "value":0,
+          "color":"yellow2",
+          "texture":"base0",
+          "id":"s28"
+        },
+        {
+          "value":0,
+          "color":"red",
+          "texture":"base0",
+          "id":"s29"
+        },
+        {
+          "value":0,
+          "color":"white",
+          "texture":"nakedFemale",
+          "id":"s30"
+        },
+        {
+          "value":0,
+          "color":"chinese",
+          "texture":"nakedFemale",
+          "id":"s31"
+        },
+        {
+          "value":0,
+          "color":"black",
+          "texture":"nakedFemale",
+          "id":"s32"
+        },
+        {
+          "value":0,
+          "color":"black2",
+          "texture":"nakedFemale",
+          "id":"s33"
+        },{
+          "value":0,
+          "color":"white",
+          "texture":"nakedMale",
+          "id":"s34"
+        },
+        {
+          "value":0,
+          "color":"chinese",
+          "texture":"nakedMale",
+          "id":"s35"
+        },
+        {
+          "value":0,
+          "color":"black",
+          "texture":"nakedMale",
+          "id":"s36"
+        },
+        {
+          "value":0,
+          "color":"black2",
+          "texture":"nakedMale",
+          "id":"s37"
+        },
+        {
+          "value":0,
+          "color":"none",
+          "texture":"rustAss",
+          "id":"s38"
+        },
+        {
+          "value":0,
+          "color":"none",
+          "texture":"bronzeRust",
+          "id":"s39"
+        },
+        {
+          "value":0,
+          "color":"none",
+          "texture":"bronze",
+          "id":"s40"
+        },
+        {
+          "value":0,
+          "color":"none",
+          "texture":"silver",
+          "id":"s41"
+        },
+
+
+        {
+          "value": 0,
+          "color": "none",
+          "secret": "------------1",
+          "texture": "robot1",
+          "id": "us0"
+        },
+
+        {
+          "value": 0,
+          "color": "none",
+          "secret": "------------2",
+          "texture": "gold",
+          "id": "us1"
+        },
+
+        {
+          "value": 0,
+          "color": "green2",
+          "secret": "------------3",
+          "texture": "robot1",
+          "id": "us2"
+        },
+
+        {
+          "value": 0,
+          "color": "pink",
+          "secret": "------------4",
+          "texture": "robot1",
+          "id": "us3"
+        },
+
+        {
+          "value": 0,
+          "color": "violet",
+          "secret": "------------5",
+          "texture": "robot1",
+          "id": "us4"
+        },
+
+        {
+          "value": 0,
+          "color": "orange",
+          "secret": "------------6",
+          "texture": "robot1",
+          "id": "us5"
+        },
+
+        {
+          "value": 0,
+          "color": "red",
+          "secret": "------------7",
+          "texture": "robot1",
+          "id": "us6"
+        },
+
+        {
+          "value": 0,
+          "color": "yellow",
+          "secret": "------------8",
+          "texture": "robot1",
+          "id": "us7"
+        },
+
+        {
+          "value": 0,
+          "color": "blue",
+          "secret": "------------9",
+          "texture": "robot1",
+          "id": "us8"
+        },
+
+        {
+          "value": 0,
+          "color": "yellow2",
+          "secret": "------------10",
+          "texture": "robot1",
+          "id": "us9"
+        },
+
+        {
+          "value": 0,
+          "color": "cyan",
+          "secret": "------------11",
+          "texture": "robot1",
+          "id": "us10"
+        },
+
+        {
+          "value": 0,
+          "color": "none",
+          "secret": "------------12",
+          "texture": "diamond",
+          "id": "us11"
+        }
+
+
+      ],
+      "costumes":[
+        {
+          "value": 0,
+          "textures": [],
+          "id": "c0"
+        },
+        {
+          "value": 0,
+          "textures":[
+            "partyHat",
+            "partySound"
+          ],
+          "id":"c1"
+        },
+        {
+          "value": 0,
+          "textures":[
+            "nurseMask"
+          ],
+          "id":"c2"
+        },
+        {
+          "value": 0,
+          "textures":[
+            "aristo"
+          ],
+          "id":"c3"
+        },
+        {
+          "value":0,
+          "textures":[
+            "clown",
+            "clownHair"
+          ],
+          "id":"c4"
+        },
+        {
+          "value":0,
+          "textures":[
+            "hair1",
+            "glasses"
+          ],
+          "id":"c5"
+        },
+
+        {
+          "value":0,
+          "textures":[
+            "wizard"
+          ],
+          "id":"c6"
+        },
+
+        {
+          "value":0,
+          "textures":[
+            "wizard",
+            "hair1"
+          ],
+          "id":"c7"
+        },
+
+        {
+          "value":0,
+          "textures":[
+            "tattoo1"
+          ],
+          "id":"c8"
+        },
+
+        {
+          "value":0,
+          "textures":[
+            "tattoo2"
+          ],
+          "id":"c9"
+        },
+
+
+
+
+
+        {
+          "value":0,
+          "textures":[
+            "ninja1"
+          ],
+          "id":"u0"
+        },
+        {
+          "value":0,
+          "textures":[
+            "tattoo3"
+          ],
+          "secret": "------------13",
+          "id":"u1"
+        },
+        {
+          "value":0,
+          "textures":[
+            "tattoo4"
+          ],
+          "secret": "------------14",
+          "id":"u2"
+        },
+        {
+          "value":0,
+          "textures":[
+            "tattoo5"
+          ],
+          "secret": "------------15",
+          "id":"u3"
+        },
+        {
+          "value":0,
+          "textures":[
+            "tattoo6"
+          ],
+          "secret": "------------16",
+          "id":"u4"
+        },
+        {
+          "value":0,
+          "textures":[
+            "tattoo7"
+          ],
+          "secret": "------------17",
+          "id":"u5"
+        },
+        {
+          "value":0,
+          "textures":[
+            "viking"
+          ],
+          "secret": "------------18",
+          "id":"u6"
+        },
+        {
+          "value":0,
+          "textures":[
+            "vaquero"
+          ],
+          "secret": "------------19",
+          "id":"u7"
+        },
+        {
+          "value":0,
+          "textures":[
+            "bandolero"
+          ],
+          "secret": "------------20",
+          "id":"u8"
+        },
+        {
+          "value":0,
+          "textures":[
+            "pirata"
+          ],
+          "secret": "------------21",
+          "id":"u9"
+        },
+        {
+          "value":0,
+          "textures":[
+            "spartan"
+          ],
+          "secret": "------------22",
+          "id":"u10"
+        },
+        {
+          "value":0,
+          "textures":[
+            "rapero"
+          ],
+          "secret": "------------23",
+          "id":"u11"
+        },
+        {
+          "value":0,
+          "textures":[
+            "kingBlue"
+          ],
+          "secret": "------------24",
+          "id":"u12"
+        },
+        {
+          "value":0,
+          "textures":[
+            "kingRed"
+          ],
+          "secret": "------------25",
+          "id":"u13"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaScorpion"
+          ],
+          "secret": "------------26",
+          "id":"u14"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaSubZero"
+          ],
+          "secret": "------------27",
+          "id":"u15"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaRain"
+          ],
+          "secret": "------------28",
+          "id":"u16"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaPink"
+          ],
+          "secret": "------------29",
+          "id":"u17"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaErmac"
+          ],
+          "secret": "------------30",
+          "id":"u18"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaReptil"
+          ],
+          "secret": "------------31",
+          "id":"u19"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaRojo"
+          ],
+          "secret": "------------32",
+          "id":"u20"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaAzul"
+          ],
+          "secret": "------------33",
+          "id":"u21"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaDorado"
+          ],
+          "secret": "------------34",
+          "id":"u22"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaPlata"
+          ],
+          "secret": "------------35",
+          "id":"u23"
+        },
+        {
+          "value":0,
+          "textures":[
+            "ninjaVerde"
+          ],
+          "secret": "------------36",
+          "id":"u24"
+        },
+
+
+
+        {
+          "value":0,
+          "secret": "reddit",
+          "textures":[
+            "reddit"
+          ],
+          "id":"h1"
+        },
+        {
+          "value":0,
+          "secret": "godenot",
+          "textures":[
+            "godenot"
+          ],
+          "id":"h2"
+        },
+        {
+          "value":0,
+          "secret": "pambisit",
+          "textures":[
+            "dalas"
+          ],
+          "id":"h3"
+        }
+
+
+      ]
+    }
+
+  }
+}

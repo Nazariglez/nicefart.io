@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/styles/Ubuntu-B.ttf");
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Ubuntu, Arial, serif;
+}
+
+.v-container {
+  top: 10px;
+}

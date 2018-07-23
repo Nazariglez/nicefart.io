@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.tarentola.nicefartio" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>NiceFart.io</name>
+    <description>
+        NiceFart.io is a casual multiplayer game where you need eat beans to defeat other players and become the biggest player.
+    </description>
+    <author email="info@tarentola.com" href="http://tarentola.com">
+        Tarentola Digital
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="BackgroundColor" value="0xff000000" />
+    <preference name="Orientation" value="landscape" />
+    <platform name="android">
+        <icon density="mdpi" src="res/android/mipmap-mdpi/ic_launcher.png" />
+        <icon density="ldpi" src="res/android/mipmap-ldpi/ic_launcher.png" />
+        <icon density="hdpi" src="res/android/mipmap-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="res/android/mipmap-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="res/android/mipmap-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="res/android/mipmap-xxxhdpi/ic_launcher.png" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-crosswalk-webview" spec="~2.3.0" />
+    <plugin name="cordova-plugin-powermanagement" spec="https://github.com/cranberrygame/cordova-plugin-powermanagement" />
+    <plugin name="cordova-plugin-keyboard" spec="~1.1.5" />
+    <plugin name="cordova-plugin-fullscreen" spec="~1.1.0" />
+    <plugin name="cordova-plugin-navigationbar" spec="https://github.com/cranberrygame/cordova-plugin-navigationbar" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
+</widget>

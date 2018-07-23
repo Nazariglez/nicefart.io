@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NiceFart.io Leaderboard ({{ .Name }})</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="description" content="Are you a badass? Play this funny io game! Eat your beans, run, hit, fart and use the powerups to beat the other players and try to become the biggest ass ever!">
+  <meta name="keywords" content="nicefartio, nicefart, fart, io, beans, multiplayer, videogame, io game, agar.io, rpg, game, games, fun, web game, html5, flash">
+  <meta name="robots" content="index, follow">
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@nicefartio" />
+  <meta name="twitter:creator" content="@tarentolad" />
+  <meta property="og:title" content="NiceFart.io">
+  <meta property="og:url" content="http://nicefart.io">
+  <meta property="og:description" content="Are you a badass? Play this funny io game! Eat your beans, run, hit, fart and use the powerups to beat the other players and try to become the biggest ass ever!"/>
+  <meta property="og:image" content="http://nicefart.io/assets/thumb1_1200x780.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="780"/>
+
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/styles/leaderboard.css?v=1.0.0">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-15785827-9', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="title">
+    <h1>
+      <a href="/">NiceFart.io</a>
+    </h1>
+  </div>
+  <div id="menu">
+    <div id="daily-button">
+      <a href="/leaderboard/today/{{ .Type }}" class='btn left {{ if eq .Date "today" }} active {{ end }}'>Today</a>
+      <a href="/leaderboard/week/{{ .Type }}" class='btn left right {{ if eq .Date "week" }} active {{ end }}'>Week</a>
+      <a href="/leaderboard/month/{{ .Type }}" class='btn right {{ if eq .Date "month" }} active {{ end }}'>Month</a>
+    </div>
+    <div>
+      <a href="/leaderboard/{{ .Date }}/points" class='btn {{ if eq .Type "points" }} active {{ end }}'>Points</a>
+      <a href="/leaderboard/{{ .Date }}/max-size" class='btn {{ if eq .Type "max-size" }} active {{ end }}'>Max Size</a>
+      <a href="/leaderboard/{{ .Date }}/killer" class='btn {{ if eq .Type "killer" }} active {{ end }}'>Killer</a>
+      <a href="/leaderboard/{{ .Date }}/big-kill" class='btn {{ if eq .Type "big-kill" }} active {{ end }}'>Big Kill</a>
+      <a href="/leaderboard/{{ .Date }}/time" class='btn {{ if eq .Type "time" }} active {{ end }}'>Time</a>
+      <a href="/leaderboard/{{ .Date }}/top-time" class='btn {{ if eq .Type "top-time" }} active {{ end }}'>Top Time</a>
+    </div>
+  </div>
+
+  <div class="ads-leaderboard">
+    <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Leaderboard NiceFart
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-7196103114244966"
+         data-ad-slot="4139907346"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>-->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Resposive NiceFart -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7196103114244966"
+         data-ad-slot="5337438940"
+         data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <table id="games">
+    <tr>
+      <th colspan="3" id="table-title">
+        {{ .Name }}
+      </th>
+    </tr>
+    <tr id="table-head">
+      <th>#</th>
+      <th>Name</th>
+      <th>{{ .Data }}</th>
+    </tr>
+    {{ range .Games }}
+    <tr>
+      <td class="position">{{ .N }}</td>
+      <td>{{ .Name }}</td>
+      <td class="data">{{ .Data }}</td>
+    </tr>
+    {{ end }}
+  </table>
+  <div class="ads-leaderboard">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Responsieve NiceFart 2 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7196103114244966"
+         data-ad-slot="9964284945"
+         data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NiceFart.io</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="propeller" content="9b1d6828085abefac5810c1edb4dfb29" />
+  <meta name="description" content="Are you a badass? Play this funny io game! Eat your beans, run, hit, fart and use the powerups to beat the other players and try to become the biggest ass ever!">
+  <meta name="keywords" content="nicefartio, nicefart, fart, io, beans, multiplayer, videogame, io game, agar.io, rpg, game, games, fun, web game, html5, flash">
+  <meta name="robots" content="index, follow">
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tarentolad" />
+  <meta name="twitter:creator" content="@tarentolad" />
+  <meta property="og:title" content="NiceFart.io">
+  <meta property="og:url" content="http://nicefart.io">
+  <meta property="og:description" content="Are you a badass? Play this funny io game! Eat your beans, run, hit, fart and use the powerups to beat the other players and try to become the biggest ass ever!"/>
+  <meta property="og:image" content="http://nicefart.io/assets/thumb1_1200x780.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="780"/>
+
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/styles/main.css?v=<%= GAME_VERSION %>">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-15785827-9', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <!--<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>-->
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <div id="login">
+    <div id="info">
+      <a href="https://twitter.com/TarentolaD" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nicefart.io" data-text="Hey! Do you wanna play with me? Check out this game!" data-hashtags="nicefartio">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <!--<br>
+      <div class="fb-like" data-href="http://nicefart.io" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>-->
+      <br>
+      <div style="height: 3px"></div>
+      <div class="g-ytsubscribe" data-channelid="UCifmwMDz0Vg0jJCl-lSsQwA" data-layout="default" data-count="hidden"></div>
+      <div id="follow-us">
+        <a href="https://twitter.com/TarentolaD" target="_blank">
+          Follow us to stay updated about future game updates!
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="loginBox">
+    <input id="player-name" type="text" name="playername" placeholder="Nickname" maxlength="12">
+  </div>
+  <div id="loader">
+    <div class="bg">
+    </div>
+    <div id="spinner">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+  </div>
+  <div id="error-container">
+    <div id="error">
+      <div class="v-centered">
+        <span id="msg-error"></span>
+        <br>
+        <button id="close-error">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="extra">
+    <div id="close">
+      <a href="#" id="close-extra" class="info">&#10006;</a>
+    </div>
+    <div class="content">
+      <div id="contact">
+        <a href="http://tarentola.com">
+          <img
+            src=""
+            alt="Tarentola Digital" id="tarentola-logo">
+        </a>
+        <div>
+          <br>
+          <p>
+            Hello! <a href="http://nicefart.io">NiceFart.io</a> is a online multiplayer game developed by a small indie studio based on Canary Islands.
+            You can follow us on <a href="https://twitter.com/TarentolaD">twitter</a>, <a href="https://www.facebook.com/Tarentola-Digital-1231109997002430/">facebook</a> and
+            <a href="https://www.youtube.com/channel/UCifmwMDz0Vg0jJCl-lSsQwA">youtube</a>, or visit our <a href="http://tarentola.com">website</a>.
+          </p>
+          <p>
+            For media and business inquiries, please <a href="mailto:info@tarentola.com">email us</a>.
+          </p>
+        </div>
+      </div>
+      <div id="changelog">
+        <h2>Last changes:</h2>
+        <%= CHANGELOG %>
+      </div>
+      <div id="privacy">
+        <h2>NiceFart.io Privacy Policy</h2>
+        <p>
+          <strong>
+            By using NiceFart.io and it's services you agree with this privacy policy.
+          </strong>
+        </p>
+        <p>
+          Our servers logs very basic information about every user connecting to our site, such as your username, skin selected and game statistics.
+        </p>
+        <p>
+          None of this information is associated with an identified person when it is collected.
+        </p>
+        <p>
+          Our site may use <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">local storage</a> to anonymous save user preferences, including your last username, skins, costumes, and other game settings.
+        </p>
+        <p>
+          Third party vendors, including <a href="https://support.google.com/ads/answer/2662922">Google</a>, <a
+          href="https://support.twitter.com/articles/20170407">Twitter</a> and <a
+          href="https://www.facebook.com/help/568137493302217">Facebook</a> may use cookies to serve ads to you based on your visit to this site and/or other sites on the Internet.
+          <br>
+          We also use Google Analytics to anonymous tracking some information to improve our game, which also use cookies.
+          <br>
+          You may opt out of the use of ad-related cookies by visiting their sites and go to their adBlock settings.
+        </p>
+        <p>
+          We may occasionally revise our privacy policy by posting the changes here. Last updated on March 5, 2017.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="cookie-alert">
+    <strong>Cookie Alert:</strong> This game use cookies to help us to improve our service. Third parties also use cookies on our site. By using this site you agree with this use of cookies and our policy. More info on
+    <a href="#privacy" class="close-cookie">privacy section</a>.
+  </div>
+  <script src="game.<%= hash %>.js"></script>
+</body>
+</html>

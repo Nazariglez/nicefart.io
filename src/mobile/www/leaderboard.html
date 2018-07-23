@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NiceFart.io Leaderboard</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="assets/styles/leaderboard.css">
+
+  <style>
+    @font-face {
+      font-family: "Ubuntu";
+      src: url("assets/styles/Ubuntu-B.ttf");
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(assets/img/TileBack.png);
+      font-family: Ubuntu, Arial, serif;
+    }
+  </style>
+
+  <script src="jquery.js"></script>
+  <script src="underscore.js"></script>
+
+  <script id="tpl-menu" type="text/template">
+    <div id="daily-button">
+      <a data-time="today" data-rank="<%= Type %>" href="#" class='btn left <% if(Date === "today"){ %> active <% } %>'>Today</a>
+      <a data-time="week" data-rank="<%= Type %>" href="#" class='btn left right <% if(Date === "week"){ %> active <% } %>'>Week</a>
+      <a data-time="month" data-rank="<%= Type %>" href="#" class='btn right <% if(Date === "month"){ %> active <% } %>'>Month</a>
+    </div>
+    <div>
+      <a data-time="<%= Date %>" data-rank="points" href="#" class='btn <% if(Type === "points"){ %> active <% } %>'>Points</a>
+      <a data-time="<%= Date %>" data-rank="max-size" href="#" class='btn <% if(Type === "max-size"){ %> active <% } %>'>Max Size</a>
+      <a data-time="<%= Date %>" data-rank="killer" href="#" class='btn <% if(Type === "killer"){ %> active <% } %>'>Killer</a>
+      <a data-time="<%= Date %>" data-rank="big-kill" href="#" class='btn <% if(Type === "big-kill"){ %> active <% } %>'>Big Kill</a>
+      <a data-time="<%= Date %>" data-rank="time" href="#" class='btn <% if(Type === "time"){ %> active <% } %>'>Time</a>
+      <a data-time="<%= Date %>" data-rank="top-time" href="#" class='btn <% if(Type === "top-time"){ %> active <% } %>'>Top Time</a>
+    </div>
+  </script>
+
+  <script type="text/template" id="tpl-games">
+    <tr>
+      <th colspan="3" id="table-title">
+        <%= Name %>
+      </th>
+    </tr>
+    <tr id="table-head">
+      <th>#</th>
+      <th>Name</th>
+      <th><%= Data %></th>
+    </tr>
+    <% for(var i = 0; i < Games.length; i++){ %>
+    <tr>
+      <td class="position"><%= Games[i].N %></td>
+      <td><%= Games[i].Name %></td>
+      <td class="data"><%= Games[i].Data %></td>
+    </tr>
+    <% } %>
+</script>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="title">
+    <h1>
+      NiceFart.io
+    </h1>
+  </div>
+  <div id="menu">
+  </div>
+
+  <table id="games">
+  </table>
+</div>
+<script src="leaderboard.js"></script>
+</body>
+
+</html>
